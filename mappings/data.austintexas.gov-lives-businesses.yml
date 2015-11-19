@@ -1,0 +1,9 @@
+schema: lives_businesses
+source:
+  name: City of Austin, TX
+  url: https://data.austintexas.gov/dataset/Restaurant-Inspection-Scores/ecmv-9xxi
+mapping:
+  base: https://data.austintexas.gov/resource/nguv-n54k.csv
+  query:
+    $select: facility_id AS business_id, restaurant_name AS name, address_address AS address, address_city AS city, address_state AS state, address_zip AS postal_code
+    $group: facility_id, restaurant_name, address_address, address_city, address_state, address_zip
