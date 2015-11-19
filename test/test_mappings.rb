@@ -52,24 +52,30 @@ class MappingTest < Test::Unit::TestCase
         # Check the constructed URL
         assert_match URI.regexp, url, "query URL is invalid"
 
-        assert_nothing_raised do
-          output = open(url)
+        output = begin
+                   open(url)
+                 rescue Exception => e
+                   fail "Exception raised fetching \"#{url}\": #{e.inspect}"
+                 end
 
-          # Make sure we got the right content type back
-          assert_match %r{text/csv}, output.content_type, "content type was invalid"
+        # Make sure we got the right content type back
+        assert_match %r{text/csv}, output.content_type, "content type was invalid"
 
-          # Make sure we can parse the CSV
-          csv = CSV.parse(output.read, :headers => true)
+        # Make sure we can parse the CSV
+        csv = begin
+                CSV.parse(output.read, :headers => true)
+              rescue Exception => e
+                fail "Exception raised parsing output: #{e.inspect}"
+              end
 
-          # Load the schema and make sure we can match the headers
-          schema = YAML.load_file(File.join(SCHEMA_DIR, subject["schema"] + ".yml"))
-          schema["columns"]
-            .reject { |c| c["optional"] }
-            .collect { |c| c["field_name"] }
-            .each { |c| 
-              assert csv.headers.index(c), "column \"#{c}\" not found in output"
-            }
-        end
+        # Load the schema and make sure we can match the headers
+        schema = YAML.load_file(File.join(SCHEMA_DIR, subject["schema"] + ".yml"))
+        schema["columns"]
+          .reject { |c| c["optional"] }
+          .collect { |c| c["field_name"] }
+          .each { |c|
+            assert csv.headers.index(c), "column \"#{c}\" not found in output"
+          }
       end
     end
   end
