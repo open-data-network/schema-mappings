@@ -7,7 +7,6 @@ require 'uri'
 
 class SchemaTest < Test::Unit::TestCase
   SCHEMA_DIR = './schemas'
-  MAPPING_DIR = './mappings'
 
   # Run the tests for every schema we have
   Find.find(SCHEMA_DIR) do |path|
