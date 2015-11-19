@@ -19,6 +19,7 @@ columns:
     field_name: city
     description: The city that this election falls within
     data_type: text
+    optional: true 
 
   - name: Administrative Division
     field_name: administrative_division
