@@ -1,0 +1,55 @@
+name: LIVES (Business Table)
+url: http://www.yelp.com/healthscores
+benefits: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue
+  ac lorem malesuada at rhoncus turpis condimentum. Maecenas commodo sem ac magna
+  posuere ultrices. Proin ut felis ac odio consectetur rutrum vel quis sem.
+columns:
+  - name: Business ID
+    field_name: business_id
+    description: Unique identifier for the business. For many cities, this may be the license number.
+    data_type: text
+
+  - name: Name
+    field_name: name
+    description: Common name of the business.
+    data_type: text
+
+  - name: Address
+    field_name: address
+    description: Street address of the business.
+    data_type: text
+
+  - name: City
+    field_name: city
+    description: City of the business
+    data_type: text
+
+  - name: State
+    field_name: state
+    description: State or province for the business. In the U.S. this should be the two-letter code for the state.
+    data_type: text
+
+  - name: Postal Code
+    field_name: postal_code
+    description: Zip code or other postal code.
+    data_type: text
+    optional: true
+
+  - name: Latitude
+    field_name: latitude
+    description: Latitude of the business. This field must be a valid WGS 84 latitude.
+    data_type: number
+    optional: true
+
+  - name: Longitude
+    field_name: longitude
+    description: Longitude of the business. This field must be a valid WGS 84 longitude.
+    data_type: number
+    optional: true
+
+  - name: Phone Number
+    field_name: phone_number
+    description: Phone number for a business including country specific dialing information.
+    data_type: text
+    optional: true

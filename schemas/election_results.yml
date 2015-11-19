@@ -1,0 +1,59 @@
+name: Election Results
+url: "http://open-elections.org"
+benefits: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue
+  ac lorem malesuada at rhoncus turpis condimentum. Maecenas commodo sem ac magna
+  posuere ultrices. Proin ut felis ac odio consectetur rutrum vel quis sem.
+columns:
+  - name: State
+    field_name: state
+    description: The state that this election falls within
+    data_type: text
+
+  - name: County
+    field_name: county
+    description: The county that this election falls within
+    data_type: text
+
+  - name: City
+    field_name: city
+    description: The city that this election falls within
+    data_type: text
+
+  - name: Administrative Division
+    field_name: administrative_division
+    description: The administrative description that this ballot item applies to
+    data_type: text
+    optional: true
+
+  - name: Item
+    field_name: item
+    description: The ballot item that this vote represents, like the elected position or initiative
+    data_type: text
+
+  - name: Item Group
+    field_name: item_group
+    description: Where multiple of a given item has multiple races, for example multiple city council positions, they'll be in multiple groups.
+    data_type: text
+    optional: true
+
+  - name: Choice
+    field_name: choice
+    description: The choices available in an election, such as candidates running or Yes/No for initiatives
+    data_type: text
+
+  - name: Party
+    field_name: party
+    description: The political party of the the candidate. Where the race is non-partisan, NP can be used instead
+    data_type: text
+
+  - name: Registered Voters
+    field_name: registered_voters
+    description: The number of voters registered for this election
+    data_type: number
+    optional: true
+
+  - name: Votes
+    field_name: votes
+    description: The number of votes cast for this item
+    data_type: number
