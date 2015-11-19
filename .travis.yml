@@ -6,4 +6,3 @@ sudo: false
 cache: bundler
 rvm:
 - 2.2.1
-bundler_args: "--with test"
