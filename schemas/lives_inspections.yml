@@ -1,0 +1,45 @@
+name: LIVES (Inspections)
+url: http://www.yelp.com/healthscores
+benefits: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue
+  ac lorem malesuada at rhoncus turpis condimentum. Maecenas commodo sem ac magna
+  posuere ultrices. Proin ut felis ac odio consectetur rutrum vel quis sem.
+columns:
+  - name: Business ID
+    field_name: business_id
+    description: Unique identifier for the business. For many cities, this may be the license number.
+    data_type: text
+
+  - name: Date
+    field_name: date
+    description: Date of the inspection in YYYYMMDD format.
+    data_type: text
+
+  - name: Score
+    field_name: score
+    description: Inspection score
+    data_type: text
+    optional: true
+
+  - name: Result
+    field_name: result
+    description: For cities that do not capture a score, this string represents the non-numeric result of the inspection. The string must be 4 characters or fewer.
+    data_type: text
+    optional: true
+
+  - name: Description
+    field_name: description
+    description: Single line description containing details on the outcome of an inspection. Use of this field is only encouraged if no violations are provided.
+    data_type: text
+    optional: true
+
+  - name: Type
+    field_name: type
+    description: String representing the type of inspection.
+    data_type: text
+    optional: true
+    valid:
+      - initial
+      - routine
+      - followup
+      - complaint
