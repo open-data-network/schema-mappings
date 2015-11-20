@@ -4,6 +4,7 @@ require 'csv'
 require 'find'
 require 'yaml'
 require 'uri'
+require 'httparty'
 
 class SchemaTest < Test::Unit::TestCase
   SCHEMA_DIR = './schemas'
@@ -17,6 +18,16 @@ class SchemaTest < Test::Unit::TestCase
 
       should "have a name" do
         assert_not_nil subject["name"]
+      end
+
+      should "have a topic" do
+        assert_not_nil subject["topic"]
+      end
+
+      should "have a valid topic" do
+        @@models ||= HTTParty.get("https://socrata-athena.herokuapp.com/schema/v1/model")
+        assert @@models["models"].include?(subject["topic"]), 
+          "#{subject["topic"]} is not a valid topic. Valid options are: #{@@models["models"]}"
       end
 
       should "have a valid url" do
