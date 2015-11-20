@@ -1,4 +1,5 @@
 name: San Francisco LIVES Businesses
+description: LIVES mapping for San Francisco businesses
 schema: lives_businesses
 source:
   name: City of San Francisco, CA

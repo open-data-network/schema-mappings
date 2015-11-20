@@ -23,6 +23,10 @@ class MappingTest < Test::Unit::TestCase
         assert_not_nil subject["name"]
       end
 
+      should "have a description" do
+        assert_not_nil subject["description"]
+      end
+
       should "have a schema" do
         assert_not_nil subject["schema"]
       end
