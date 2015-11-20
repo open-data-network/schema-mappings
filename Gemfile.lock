@@ -11,11 +11,16 @@ GEM
     coderay (1.1.0)
     crack (0.4.2)
       safe_yaml (~> 1.0.0)
+    docopt (0.5.0)
     hashdiff (0.2.3)
+    httparty (0.13.7)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     json (1.8.3)
     method_source (0.8.2)
     minitest (5.8.3)
+    multi_xml (0.5.5)
     power_assert (0.2.6)
     pry (0.10.3)
       coderay (~> 1.1.0)
@@ -44,6 +49,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  docopt
+  httparty
   minitest
   pry
   rake
