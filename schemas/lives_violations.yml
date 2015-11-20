@@ -1,0 +1,37 @@
+name: LIVES (Inspections)
+url: http://www.yelp.com/healthscores
+topic: health
+benefits: >
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue
+  ac lorem malesuada at rhoncus turpis condimentum. Maecenas commodo sem ac magna
+  posuere ultrices. Proin ut felis ac odio consectetur rutrum vel quis sem.
+columns:
+  - name: Business ID
+    field_name: business_id
+    description: Unique identifier for the business. For many cities, this may be the license number.
+    data_type: text
+
+  - name: Date
+    field_name: date
+    description: Date of the inspection in YYYYMMDD format.
+    data_type: text
+
+  - name: Description
+    field_name: description
+    description: One line description of the violation.
+    data_type: text
+
+  - name: Code
+    field_name: code
+    description: Code for the violation. It is recommended that this be based on the FDA Food Code. However, municipalities can decide to use pre-existing codes for this field.
+    data_type: text
+    optional: true
+
+  - name: Critical
+    field_name: critical
+    description: Describes whether the violation is critical (i.e., if it would cause the restaurant to fail their inspection)
+    data_type: text
+    optional: true
+    valid:
+      - true
+      - false
