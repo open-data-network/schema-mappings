@@ -1,4 +1,4 @@
-name: City of Austin LIVES Businesses
+name: Austin LIVES Businesses
 description: Mapping of Austin restaurant inspection scores to LIVES Businesses.
 schema: lives_businesses
 source:
