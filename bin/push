@@ -1,0 +1,124 @@
+#!/usr/bin/env ruby
+#
+# Pushes schemas and mappings to Athena
+
+require 'find'
+require 'docopt'
+require 'yaml'
+require 'httparty'
+require 'json'
+
+SCHEMA_DIR = "schemas"
+doc = <<DOCOPT
+Pushes schemas and mappings to Athena
+
+Usage:
+  #{__FILE__} schemas <filename>...
+  #{__FILE__} mappings <filename>...
+
+Options:
+  -h --help     Show this screen.
+  -v --verbose  Be loud and proud.
+DOCOPT
+
+begin
+  opts = Docopt::docopt(doc)
+
+  opts["<filename>"].each do |filename|
+    file = YAML.load_file(filename)
+
+    if opts["schemas"]
+      schema = {
+        "id" => File.basename(filename, ".yml"),
+        "name" => file["name"],
+        "url" => file["url"],
+        "benefits" => file["benefits"],
+        "columns" =>
+          file["columns"]
+            .reject { |c| c["optional"] }
+            .collect { |c|
+              {
+                "name" => c["name"],
+                "fieldName" => c["field_name"],
+                "description" => c["description"],
+                "dataTypeName" => c["data_type"]
+              }
+            },
+        "optColumns" => 
+          file["columns"]
+            .select { |c| c["optional"] }
+            .collect { |c|
+              {
+                "name" => c["name"],
+                "fieldName" => c["field_name"],
+                "description" => c["description"],
+                "dataTypeName" => c["data_type"]
+              }
+            }
+      }
+
+      response = HTTParty.post("https://socrata-athena.herokuapp.com/schema/v1/standard/#{file["topic"]}", {
+                              # debug_output: $stdout,
+                              body: schema.to_json,
+                              headers: { "Content-Type" => "application/json" }
+      })
+
+      if response.code == 200
+        puts "Pushed #{filename} successfully!"
+      else
+        $stderr.puts "Error #{response.code} pushing #{filename}: #{response.body}"
+      end
+    elsif opts["mappings"]
+      schema_file = YAML.load_file(File.join(SCHEMA_DIR, file["schema"] + ".yml"))
+      mapping = {
+        "id" => File.basename(filename, ".yml"),
+        "standardIds" => [file["schema"]],
+        "name" => file["name"],
+        "description" => file["description"],
+        "query" => file["mapping"]["query"],
+        "url" => file["source"]["url"],
+        "author" => file["source"]["name"],
+        "entityType" => "",
+        "benefits" => "",
+        "columns" =>
+          schema_file["columns"]
+            .reject { |c| c["optional"] }
+            .collect { |c|
+              {
+                "name" => c["name"],
+                "fieldName" => c["field_name"],
+                "description" => c["description"],
+                "dataTypeName" => c["data_type"]
+              }
+            },
+        "optColumns" => 
+          schema_file["columns"]
+            .select { |c| c["optional"] }
+            .collect { |c|
+              {
+                "name" => c["name"],
+                "fieldName" => c["field_name"],
+                "description" => c["description"],
+                "dataTypeName" => c["data_type"]
+              }
+            }
+      }
+
+      uid = file["mapping"]["base"].match(/([a-z0-9]{4}-[a-z0-9]{4})/)[1]
+
+      response = HTTParty.post("https://socrata-athena.herokuapp.com/schema/v1/applied/#{uid}", {
+                              # debug_output: $stdout,
+                              body: mapping.to_json,
+                              headers: { "Content-Type" => "application/json" }
+      })
+
+      if response.code == 200
+        puts "Pushed #{filename} successfully!"
+      else
+        $stderr.puts "Error #{response.code} pushing #{filename}: #{response.body}"
+      end
+    end
+  end
+rescue Docopt::Exit => e
+  puts e.message
+end

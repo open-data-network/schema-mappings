@@ -6,6 +6,7 @@ require 'yaml'
 require 'uri'
 require 'cgi'
 require 'open-uri'
+require 'httparty'
 
 class MappingTest < Test::Unit::TestCase
   MAPPING_DIR = './mappings'
@@ -17,6 +18,10 @@ class MappingTest < Test::Unit::TestCase
 
     context "mapping:#{path}" do
       subject { YAML.load_file(path) }
+
+      should "have a name" do
+        assert_not_nil subject["name"]
+      end
 
       should "have a schema" do
         assert_not_nil subject["schema"]
@@ -44,6 +49,19 @@ class MappingTest < Test::Unit::TestCase
         assert_not_nil subject["mapping"]["base"]
         assert_match URI.regexp, subject["mapping"]["base"], "Query did not parse as valid"
       end
+
+      # should "map a dataset in the same topic as the schema" do
+      #   uid = subject["mapping"]["base"].match(/([a-z0-0]{4}-[a-z0-0]{4})/)[1]
+      #   assert_not_nil uid, "could not parse out a valid uid"
+
+      #   models = HTTParty.get("https://socrata-athena.herokuapp.com/schema/v1/dataset/#{uid}/models")
+      #   schema = YAML.load_file(File.join(SCHEMA_DIR, subject["schema"] + ".yml"))
+
+      #   require 'pry'; binding.pry
+
+      #   assert models.include? schema["topic"], 
+      #     "#{schema["topic"]} is not in the valid set of topics for #{uid}: #{models}"
+      # end
 
       should "have output that matches the schema" do
         query = subject["mapping"]["query"].merge({"$limit" => 1})

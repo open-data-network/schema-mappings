@@ -1,4 +1,6 @@
+name: Austin LIVES Inspections
 schema: lives_inspections
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque dictum augue ac lorem malesuada at rhoncus turpis condimentum. Maecenas commodo sem ac magna posuere ultrices. Proin ut felis ac odio consectetur rutrum vel quis sem.
 source:
   name: City of Austin, TX
   url: https://data.austintexas.gov/dataset/Restaurant-Inspection-Scores/ecmv-9xxi
