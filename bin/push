@@ -79,7 +79,6 @@ begin
         "url" => file["source"]["url"],
         "author" => file["source"]["name"],
         "entityType" => "",
-        "benefits" => "",
         "columns" =>
           schema_file["columns"]
             .reject { |c| c["optional"] }

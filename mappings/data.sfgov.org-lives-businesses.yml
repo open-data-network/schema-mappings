@@ -1,0 +1,10 @@
+name: San Francisco LIVES Businesses
+schema: lives_businesses
+source:
+  name: City of San Francisco, CA
+  url: https://data.sfgov.org/Health-and-Social-Services/Food-inspections-LIVES-schema/7bjp-f3sp
+mapping:
+  base: https://data.sfgov.org/resource/867k-d2ma.csv
+  query:
+    $select: business_id, business_name AS name, business_address AS address, business_city AS city, 'CA' AS state, business_postal_code AS postal_code
+    $group: business_id, business_name, business_address, business_city, business_postal_code
