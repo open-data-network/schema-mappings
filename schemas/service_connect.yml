@@ -1,0 +1,100 @@
+name: Service Connect 311
+url: https://open-data-standards.github.io/data-schemas/schemas/Service_Connect.html
+topic: infrastructure
+benefits: >
+  A dataset containing these attributes powers the Service Connect app. While
+  several fields are optional, they greatly improve the user experience for
+  both citizen users and administrators.
+columns:
+  - name: Ticket ID
+    field_name: ticket_id
+    data_type: text
+    description: Unique ID, search
+
+  - name: Issue Type
+    field_name: issue_type
+    data_type: text
+    description: Categorization, filtering
+
+  - name: Secondary Issue Type
+    field_name: secondary_issue_type
+    data_type: text
+    optional: true
+    description: Secondary categorization, filtering
+
+  - name: Issue Description
+    field_name: issue_description
+    data_type: text
+    description: User-facing context
+
+  - name: Street Address
+    field_name: street_address
+    data_type: text
+    optional: true
+    description: Search
+
+  - name: City
+    field_name: city
+    data_type: text
+    optional: true
+    description: Search
+
+  - name: State / Province
+    field_name: state
+    data_type: text
+    optional: true
+    description: Search
+
+  - name: ZIP / Postal Code
+    field_name: zip_code
+    data_type: text
+    optional: true
+    description: Search
+
+  - name: Neighborhood / District / Ward / etc.
+    field_name: neighborhood_district
+    data_type: text
+    description: Filtering, categorization
+
+  - name: Supvervisor District / Ward / etc.
+    field_name: neighborhood_district_secondary
+    data_type: text
+    optional: true
+    description: Filtering, categorization
+
+  - name: Ticket Created Date / Time
+    field_name: ticket_created_date_time
+    data_type: floating_timestamp
+    description: Filtering, charting
+
+  - name: Ticket Last Updated Date / Time
+    field_name: ticket_last_updated_date_time
+    data_type: floating_timestamp
+    optional: true
+    description: Filtering, charting
+
+  - name: Ticket Closed Date / Time
+    field_name: ticket_closed_date_time
+    data_type: floating_timestamp
+    description: Filtering, charting
+
+  - name: Ticket Status
+    field_name: ticket_status
+    data_type: text
+    description: Filtering, charting
+    valid:
+      - Open
+      - Closed
+
+  - name: Image
+    field_name: image
+    data_type: text
+    optional: true
+    description: User-facing context
+
+  - name: Location
+    field_name: location
+    data_type: point
+    description: Mapping
+
+
