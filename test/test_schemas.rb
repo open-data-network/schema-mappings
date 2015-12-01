@@ -8,6 +8,7 @@ require 'httparty'
 
 class SchemaTest < Test::Unit::TestCase
   SCHEMA_DIR = './schemas'
+  DATA_TYPES = %w(text number floating_timestamp point line polygon)
 
   # Run the tests for every schema we have
   Find.find(SCHEMA_DIR) do |path|
@@ -55,7 +56,7 @@ class SchemaTest < Test::Unit::TestCase
           assert_not_nil col["field_name"], "#{name} has no field_name: "
           assert_not_nil col["description"], "#{name} has no description"
           assert_not_nil col["data_type"], "#{name} has no data_type"
-          assert ["text", "number"].include?( col["data_type"] ), "#{name} has an invalid data_type"
+          assert DATA_TYPES.include?(col["data_type"]), "#{name} has an invalid data_type"
           assert [nil, false, true].include?(col["optional"]), "#{name}: optional is not nil or a boolean"
         end
       end
