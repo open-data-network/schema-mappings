@@ -1,0 +1,65 @@
+name: "Open Budget: Capital Budget"
+url: "https://drive.google.com/file/d/0B4RWzqGmPbu_ZHcybUdkUzhLSjQ/view"
+topic: finance
+benefits: Three primary datasets work together to power an Open Budget application. This is a summary of the data schema; a full version of the schema is documented and kept up-to-date here. A shapefile and an additional auxiliary dataset are documented at that location.
+columns:
+  - name: Fiscal Year
+    field_name: fiscal_year
+    data_type: text
+    description: Used to distinguish entries across multiple years
+
+  - name: Priority
+    field_name: priority
+    data_type: text
+    description: First level of detail presented in the heirarchy
+
+  - name: Service
+    field_name: service
+    data_type: text
+    description: Second level of detail presented in the heirarchy
+    optional: true
+
+  - name: Department
+    field_name: department
+    data_type: text
+    description: Third level of detail presented in the heirarchy
+    optional: true
+
+  - name: Program
+    field_name: program
+    data_type: text
+    description: Fourth level of detail presented in the heirarchy
+    optional: true
+
+  - name: Division
+    field_name: division
+    data_type: text
+    description: Fifth level of the detail presented in the heirarchy
+    optional: true
+
+  - name: Project
+    field_name: project
+    data_type: text
+    description: Sixth level of the detail presented in the heirarchy
+    optional: true
+
+  - name: Project ID
+    field_name: project_id
+    data_type: text
+    description: The ID number of the project. This is used to reference additional information from the required Project Details dataset
+
+  - name: Approved Amount
+    field_name: approved_amount
+    data_type: number
+    description: The amount that has been approved to be spent in a given fiscal year
+
+  - name: Fund
+    field_name: fund
+    data_type: text
+    description: The name of the fund that the money flows into our out from
+
+  - name: Fund Type
+    field_name: fund_type
+    data_type: text
+    description: A high-level classification of funds, if needed
+    optional: true

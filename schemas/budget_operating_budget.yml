@@ -1,7 +1,7 @@
-name: "Open Budget: Operating Budget"
-url: "https://drive.google.com/file/d/0B4RWzqGmPbu_ZHcybUdkUzhLSjQ/view"
+name: "Open Budget: Operating Budget / CIP"
+url: "https://drive.google.com/file/d/0B4RWzqGmPbu_UkRPWmQ3Wkp5OFU/view"
 topic: finance
-benefits: Three primary datasets work together to power an Open Budget application. This is a summary of the data schema; a full version of the schema is documented and kept up-to-date here. A shapefile and an additional auxiliary dataset are documented at that location.
+benefits: Socrata’s Open Budget allows you to visualize the revenues and expenses of your Operating Budget and Capital Budget / Capital Improvement Plan (CIP).
 columns:
   - name: Fiscal Year
     field_name: fiscal_year
@@ -25,33 +25,51 @@ columns:
     description: Third level of detail presented in the heirarchy
     optional: true
 
+  - name: Department
+    field_name: department
+    data_type: text
+    description: Fourth level of detail presented in the heirarchy
+    optional: true
+
   - name: Program
     field_name: program
     data_type: text
-    description: Fourth level of detail presented in the heirarchy
+    description: Fifth level of detail presented in the heirarchy
     optional: true
 
   - name: Division
     field_name: division
     data_type: text
-    description: Fifth level of the detail presented in the heirarchy
-    optional: true
-
-  - name: Project
-    field_name: project
-    data_type: text
     description: Sixth level of the detail presented in the heirarchy
     optional: true
 
-  - name: Project ID
-    field_name: project_id
+  - name: Description
+    field_name: description
     data_type: text
-    description: The ID number of the project. This is used to reference additional information from the required Project Details dataset
+    description: A detailed description for the item.
+
+  - name: Item Category
+    field_name: item_category
+    data_type: text
+    description: The type of revenue or expense—usually a generic name
+    optional: true
 
   - name: Approved Amount
     field_name: approved_amount
     data_type: number
-    description: The amount that has been approved to be spent in a given fiscal year
+    description: The primary amount to show, most likely the amount approved in the budget
+
+  - name: Actual Amount
+    field_name: actual_amount
+    data_type: number
+    description: A comparison to show against the primary amount, most likely the YTD actual
+    optional: true
+
+  - name: Recommended Amount
+    field_name: recommended_amount
+    data_type: number
+    description: A second comparison to show, most likely the proposed or recommended amount
+    optional: true
 
   - name: Fund
     field_name: fund
