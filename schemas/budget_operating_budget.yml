@@ -25,8 +25,8 @@ columns:
     description: Third level of detail presented in the heirarchy
     optional: true
 
-  - name: Department
-    field_name: department
+  - name: Category
+    field_name: category
     data_type: text
     description: Fourth level of detail presented in the heirarchy
     optional: true
