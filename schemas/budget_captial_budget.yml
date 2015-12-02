@@ -1,0 +1,83 @@
+name: "Open Budget: Capital Budget / CIP"
+url: "https://drive.google.com/file/d/0B4RWzqGmPbu_UkRPWmQ3Wkp5OFU/view"
+topic: finance
+benefits: Socrata’s Open Budget allows you to visualize the revenues and expenses of your Operating Budget and Capital Budget / Capital Improvement Plan (CIP).
+columns:
+  - name: Fiscal Year
+    field_name: fiscal_year
+    data_type: text
+    description: Used to distinguish entries across multiple years
+
+  - name: Priority
+    field_name: priority
+    data_type: text
+    description: First level of detail presented in the heirarchy
+
+  - name: Service
+    field_name: service
+    data_type: text
+    description: Second level of detail presented in the heirarchy
+    optional: true
+
+  - name: Department
+    field_name: department
+    data_type: text
+    description: Third level of detail presented in the heirarchy
+    optional: true
+
+  - name: Department
+    field_name: department
+    data_type: text
+    description: Fourth level of detail presented in the heirarchy
+    optional: true
+
+  - name: Program
+    field_name: program
+    data_type: text
+    description: Fifth level of detail presented in the heirarchy
+    optional: true
+
+  - name: Division
+    field_name: division
+    data_type: text
+    description: Sixth level of the detail presented in the heirarchy
+    optional: true
+
+  - name: Description
+    field_name: description
+    data_type: text
+    description: A detailed description for the item.
+
+  - name: Item Category
+    field_name: item_category
+    data_type: text
+    description: The type of revenue or expense—usually a generic name
+    optional: true
+
+  - name: Approved Amount
+    field_name: approved_amount
+    data_type: number
+    description: The primary amount to show, most likely the amount approved in the budget
+
+  - name: Actual Amount
+    field_name: actual_amount
+    data_type: number
+    description: A comparison to show against the primary amount, most likely the YTD actual
+    optional: true
+
+  - name: Recommended Amount
+    field_name: recommended_amount
+    data_type: number
+    description: A second comparison to show, most likely the proposed or recommended amount
+    optional: true
+
+  - name: Fund
+    field_name: fund
+    data_type: text
+    description: The name of the fund that the money flows into our out from
+
+  - name: Fund Type
+    field_name: fund_type
+    data_type: text
+    description: A high-level classification of funds, if needed
+    optional: true
