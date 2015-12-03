@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of New Haven"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of New Haven"
+source:
+  name: "City of New Haven"
+  url: "https://transparencyapps.demo.socrata.com/d/jwk7-h5ah"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/tj9w-mtt5.csv"

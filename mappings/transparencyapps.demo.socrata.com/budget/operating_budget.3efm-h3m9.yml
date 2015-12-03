@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Austin"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Austin"
+source:
+  name: "City of Austin"
+  url: "https://transparencyapps.demo.socrata.com/d/3efm-h3m9"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/fake-rha2.csv"

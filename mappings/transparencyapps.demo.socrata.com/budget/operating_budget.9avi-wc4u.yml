@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Davis"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Davis"
+source:
+  name: "City of Davis"
+  url: "https://transparencyapps.demo.socrata.com/d/9avi-wc4u"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/3wvf-naru.csv"

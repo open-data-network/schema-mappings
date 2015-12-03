@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Santa Monica"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Santa Monica"
+source:
+  name: "City of Santa Monica"
+  url: "https://transparencyapps.demo.socrata.com/d/9tqv-2ynx"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/y4e5-k5hj.csv"

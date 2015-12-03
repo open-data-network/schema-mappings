@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Bullhead"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Bullhead"
+source:
+  name: "City of Bullhead"
+  url: "https://transparencyapps.demo.socrata.com/d/6rpc-txh9"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/ei7s-7x6f.csv"

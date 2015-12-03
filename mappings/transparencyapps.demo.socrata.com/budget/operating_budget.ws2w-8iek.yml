@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Rocklin"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Rocklin"
+source:
+  name: "City of Rocklin"
+  url: "https://transparencyapps.demo.socrata.com/d/ws2w-8iek"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/ggve-i5yq.csv"

@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Menlo Park"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Menlo Park"
+source:
+  name: "City of Menlo Park"
+  url: "https://transparencyapps.demo.socrata.com/d/vw5v-kd6r"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/6w58-6n9j.csv"

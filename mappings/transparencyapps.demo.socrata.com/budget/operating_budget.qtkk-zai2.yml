@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for Thurston County"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for Thurston County"
+source:
+  name: "Thurston County"
+  url: "https://transparencyapps.demo.socrata.com/d/qtkk-zai2"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/g9r4-at7r.csv"

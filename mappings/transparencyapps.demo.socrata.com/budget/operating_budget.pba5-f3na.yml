@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Sausalito"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Sausalito"
+source:
+  name: "City of Sausalito"
+  url: "https://transparencyapps.demo.socrata.com/d/pba5-f3na"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/58wh-acr6.csv"

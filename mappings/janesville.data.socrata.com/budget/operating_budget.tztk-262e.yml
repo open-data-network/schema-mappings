@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Janesville"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Janesville"
+source:
+  name: "City of Janesville"
+  url: "https://janesville.data.socrata.com/d/tztk-262e"
+mapping:
+  base: "https://janesville.data.socrata.com/resource/5kbt-pz3y.csv"

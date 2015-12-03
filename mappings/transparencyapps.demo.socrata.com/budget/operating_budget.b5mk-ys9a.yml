@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Sherwood"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Sherwood"
+source:
+  name: "City of Sherwood"
+  url: "https://transparencyapps.demo.socrata.com/d/b5mk-ys9a"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/vqyp-7sis.csv"

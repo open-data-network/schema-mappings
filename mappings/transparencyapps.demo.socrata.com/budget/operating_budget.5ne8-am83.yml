@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Palo Alto"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Palo Alto"
+source:
+  name: "City of Palo Alto"
+  url: "https://transparencyapps.demo.socrata.com/d/5ne8-am83"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/srbh-7kpc.csv"

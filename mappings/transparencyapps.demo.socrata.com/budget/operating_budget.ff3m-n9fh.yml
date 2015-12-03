@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Fort Lauderdale"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Fort Lauderdale"
+source:
+  name: "City of Fort Lauderdale"
+  url: "https://transparencyapps.demo.socrata.com/d/ff3m-n9fh"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/e38c-2ifi.csv"

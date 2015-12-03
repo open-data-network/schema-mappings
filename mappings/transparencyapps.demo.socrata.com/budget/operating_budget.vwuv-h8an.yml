@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Washougal"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Washougal"
+source:
+  name: "City of Washougal"
+  url: "https://transparencyapps.demo.socrata.com/d/vwuv-h8an"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/7jjt-xgwq.csv"

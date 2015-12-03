@@ -1,0 +1,9 @@
+budget:
+  query: "http://bellerophon.herokuapp.com/ngBudget/app_configurations/list.json?keys=string.customer_name,dataset_domain,operating_budget_dataset_id,revenue_budget_dataset_id,capital_budget_dataset_id,capital_projects_dataset_id,phase_dataset_id"
+  datasets:
+    - schema: "budget/capital_budget"
+      key: capital_budget_dataset_id
+    - schema: "budget/capital_projects"
+      key: capital_projects_dataset_id
+    - schema: "budget/operating_budget"
+      key: operating_budget_dataset_id

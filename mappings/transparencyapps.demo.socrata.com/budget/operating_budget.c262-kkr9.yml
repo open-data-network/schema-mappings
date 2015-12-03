@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Thousand Oaks"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Thousand Oaks"
+source:
+  name: "City of Thousand Oaks"
+  url: "https://transparencyapps.demo.socrata.com/d/c262-kkr9"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/vnem-yj24.csv"

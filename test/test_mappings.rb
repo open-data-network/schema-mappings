@@ -68,7 +68,7 @@ class MappingTest < Test::Unit::TestCase
       # end
 
       should "have output that matches the schema" do
-        query = subject["mapping"]["query"].merge({"$limit" => 1})
+        query = (subject["mapping"]["query"] || {}).merge({"$limit" => 1})
         url = subject["mapping"]["base"] + "?" + query.collect{ |k,v| "#{k}=#{v}" }.join("&")
 
         # Check the constructed URL

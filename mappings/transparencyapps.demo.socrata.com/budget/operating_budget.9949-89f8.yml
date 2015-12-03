@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Salinas"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Salinas"
+source:
+  name: "City of Salinas"
+  url: "https://transparencyapps.demo.socrata.com/d/9949-89f8"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/2p2v-cuky.csv"

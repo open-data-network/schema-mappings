@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Los Angeles"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Los Angeles"
+source:
+  name: "City of Los Angeles"
+  url: "https://transparencyapps.demo.socrata.com/d/dkvd-fu33"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/xp2x-mi4s.csv"

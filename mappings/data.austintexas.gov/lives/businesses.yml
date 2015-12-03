@@ -1,6 +1,6 @@
 name: Austin LIVES Businesses
 description: Mapping of Austin restaurant inspection scores to LIVES Businesses.
-schema: lives_businesses
+schema: lives/businesses
 source:
   name: City of Austin, TX
   url: https://data.austintexas.gov/dataset/Restaurant-Inspection-Scores/ecmv-9xxi

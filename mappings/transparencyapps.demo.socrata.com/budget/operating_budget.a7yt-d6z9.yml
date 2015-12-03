@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Calabasas"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Calabasas"
+source:
+  name: "City of Calabasas"
+  url: "https://transparencyapps.demo.socrata.com/d/a7yt-d6z9"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/hei5-agip.csv"

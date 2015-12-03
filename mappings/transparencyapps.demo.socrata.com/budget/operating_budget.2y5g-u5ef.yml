@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for State of Rhode Island"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for State of Rhode Island"
+source:
+  name: "State of Rhode Island"
+  url: "https://transparencyapps.demo.socrata.com/d/2y5g-u5ef"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/h8im-26i5.csv"

@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of St. Helena"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of St. Helena"
+source:
+  name: "City of St. Helena"
+  url: "https://transparencyapps.demo.socrata.com/d/2iz6-v6g3"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/kscq-92xg.csv"

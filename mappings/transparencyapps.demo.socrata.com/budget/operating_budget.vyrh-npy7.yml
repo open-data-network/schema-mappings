@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for Sierra County"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for Sierra County"
+source:
+  name: "Sierra County"
+  url: "https://transparencyapps.demo.socrata.com/d/vyrh-npy7"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/iz5k-d7af.csv"

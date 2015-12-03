@@ -1,0 +1,24 @@
+name: "Open Budget: Project Phases List"
+url: "https://drive.google.com/file/d/0B4RWzqGmPbu_ZHcybUdkUzhLSjQ/view"
+topic: finance
+benefits: Different projects may have a different series of phases (defined in the Phase List Dataset below) and the current phase is indicated by the “current_phase”.
+columns:
+  - name: Phase Type
+    field_name: phase_type
+    data_type: text
+    description: An overall name for the phase list. For instance, if your different departments have different phases, you might use that department’s name. This name is used internally only; it is never shown to the user.
+
+  - name: Phase Step Number
+    field_name: phase_step_number
+    data_type: number
+    description: Used to order the phases in the visualization, so the first phase should have a value of 1, the second phase should have a value of 2, and so on.
+
+  - name: Phase Step Name
+    field_name: phase_step_name
+    data_type: text
+    description: A textual name of the phase for constituents to read. Should be short
+
+  - name: Phase Step Description
+    field_name: phase_step_description
+    data_type: text
+    description: A single-sentence description of the phase

@@ -48,6 +48,16 @@ class SchemaTest < Test::Unit::TestCase
         assert subject["columns"] && subject["columns"].length > 0, "has no columns"
       end
 
+      should "have unique column names" do
+        col_names = subject["columns"].collect { |c| c["name"] }.sort
+        assert_equal col_names.uniq, col_names, "duplicate column names detected"
+      end
+
+      should "have unique field names" do
+        col_names = subject["columns"].collect { |c| c["field_name"] }.sort
+        assert_equal col_names.uniq, col_names, "duplicate field names detected"
+      end
+
       should "have valid columns" do
         subject["columns"].each do |col|
           assert_not_nil col["name"], "has no name: #{col.inspect}"
