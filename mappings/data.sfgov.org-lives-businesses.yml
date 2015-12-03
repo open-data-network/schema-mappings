@@ -1,6 +1,6 @@
 name: San Francisco LIVES Businesses
 description: LIVES mapping for San Francisco businesses
-schema: lives_businesses
+schema: lives/businesses
 source:
   name: City of San Francisco, CA
   url: https://data.sfgov.org/Health-and-Social-Services/Food-inspections-LIVES-schema/7bjp-f3sp

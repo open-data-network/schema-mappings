@@ -1,5 +1,5 @@
 name: San Francisco LIVES Inspections
-schema: lives_inspections
+schema: lives/inspections
 description: Inspection listings for San Francisco, in LIVES format.
 source:
   name: City of San Francisco, CA

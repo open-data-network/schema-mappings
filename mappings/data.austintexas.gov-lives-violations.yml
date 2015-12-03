@@ -1,5 +1,5 @@
 name: San Francisco LIVES Violations
-schema: lives_violations
+schema: lives/violations
 description: Health code violations for San Francisco, in LIVES format.
 source:
   name: City of San Francisco, CA

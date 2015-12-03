@@ -12,6 +12,7 @@ columns:
     field_name: priority
     data_type: text
     description: First level of detail presented in the heirarchy
+    optional: true
 
   - name: Service
     field_name: service
