@@ -8,6 +8,7 @@ gem 'test-unit'
 gem 'pry'
 gem 'docopt'
 gem 'httparty'
+gem 'soda-ruby'
 
 group :development do
   gem 'guard'

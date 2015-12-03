@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Atherton"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Atherton"
+source:
+  name: "City of Atherton"
+  url: "https://transparencyapps.demo.socrata.com/d/vjwf-7q2x"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/7q2s-4tcc.csv"

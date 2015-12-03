@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for Jefferson County"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for Jefferson County"
+source:
+  name: "Jefferson County"
+  url: "https://transparencyapps.demo.socrata.com/d/ptz8-zbnx"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/pm2c-4yfq.csv"

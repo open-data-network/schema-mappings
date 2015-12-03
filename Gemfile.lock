@@ -28,6 +28,7 @@ GEM
       guard-compat (~> 1.2)
       test-unit (~> 3.0)
     hashdiff (0.2.3)
+    hashie (3.4.3)
     httparty (0.13.7)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -40,6 +41,7 @@ GEM
     method_source (0.8.2)
     minitest (5.8.3)
     multi_xml (0.5.5)
+    multipart-post (2.0.0)
     nenv (0.2.0)
     notiffany (0.0.8)
       nenv (~> 0.1)
@@ -62,6 +64,12 @@ GEM
     shoulda-matchers (2.8.0)
       activesupport (>= 3.0.0)
     slop (3.6.0)
+    soda-ruby (0.2.17)
+      hashie (~> 3.4.2)
+      multipart-post (~> 2.0.0)
+      sys-uname (~> 1.0.2)
+    sys-uname (1.0.2)
+      ffi (>= 1.0.0)
     test-unit (3.1.5)
       power_assert
     thor (0.19.1)
@@ -85,6 +93,7 @@ DEPENDENCIES
   pry
   rake
   shoulda
+  soda-ruby
   test-unit
   webmock
 

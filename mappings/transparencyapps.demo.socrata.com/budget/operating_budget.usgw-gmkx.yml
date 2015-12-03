@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for Marin County"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for Marin County"
+source:
+  name: "Marin County"
+  url: "https://transparencyapps.demo.socrata.com/d/usgw-gmkx"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/my78-8ubz.csv"

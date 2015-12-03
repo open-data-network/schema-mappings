@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Mountain View"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Mountain View"
+source:
+  name: "City of Mountain View"
+  url: "https://transparencyapps.demo.socrata.com/d/ka5v-ki4d"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/4rdq-ecsy.csv"

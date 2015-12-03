@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for Open Budget KC"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for Open Budget KC"
+source:
+  name: "Open Budget KC"
+  url: "https://data.kcmo.org/d/wz55-zjbm"
+mapping:
+  base: "https://data.kcmo.org/resource/w6ee-u43s.csv"

@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Seneca"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Seneca"
+source:
+  name: "City of Seneca"
+  url: "https://transparencyapps.demo.socrata.com/d/gfby-72yj"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/awza-qpy9.csv"

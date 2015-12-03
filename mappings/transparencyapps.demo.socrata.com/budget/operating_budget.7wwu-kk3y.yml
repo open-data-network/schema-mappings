@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of El Segundo"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of El Segundo"
+source:
+  name: "City of El Segundo"
+  url: "https://transparencyapps.demo.socrata.com/d/7wwu-kk3y"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/87kz-uuya.csv"

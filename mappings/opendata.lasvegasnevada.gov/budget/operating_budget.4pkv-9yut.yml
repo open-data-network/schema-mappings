@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Las Vegas"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Las Vegas"
+source:
+  name: "City of Las Vegas"
+  url: "https://opendata.lasvegasnevada.gov/d/4pkv-9yut"
+mapping:
+  base: "https://opendata.lasvegasnevada.gov/resource/925d-jizp.csv"

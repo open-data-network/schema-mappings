@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for Cal Poly San Luis Obispo"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for Cal Poly San Luis Obispo"
+source:
+  name: "Cal Poly San Luis Obispo"
+  url: "https://transparencyapps.demo.socrata.com/d/uk9g-vs55"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/tdzu-atvn.csv"

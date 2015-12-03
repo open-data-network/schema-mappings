@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Bell"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Bell"
+source:
+  name: "City of Bell"
+  url: "https://transparencyapps.demo.socrata.com/d/qrz9-hzbt"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/m63j-aubm.csv"

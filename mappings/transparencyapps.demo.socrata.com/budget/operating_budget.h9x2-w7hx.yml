@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of El Monte"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of El Monte"
+source:
+  name: "City of El Monte"
+  url: "https://transparencyapps.demo.socrata.com/d/h9x2-w7hx"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/d5ch-qpab.csv"

@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Cedar Hill"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Cedar Hill"
+source:
+  name: "City of Cedar Hill"
+  url: "https://transparencyapps.demo.socrata.com/d/xup9-tdpu"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/dmp7-794e.csv"

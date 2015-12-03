@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP for City of Berkeley"
+schema: budget/operating_budget
+description: "Open Budget: Operating Budget / CIP for City of Berkeley"
+source:
+  name: "City of Berkeley"
+  url: "https://data.cityofberkeley.info/d/gy8t-iqc4"
+mapping:
+  base: "https://data.cityofberkeley.info/resource/rts8-a75w.csv"
