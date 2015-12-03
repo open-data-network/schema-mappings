@@ -68,7 +68,7 @@ task :update_auto_mappings do
 
           # Check columns
           if missing.size > 0
-            raise "Missing required headers for #{@base}: #{missing}"
+            raise "\"#{@customer}\" missing required headers for #{@base}: #{missing}"
           end
 
           result = template.result(binding)
