@@ -29,7 +29,7 @@ begin
 
     if opts["schemas"]
       schema = {
-        "id" => File.basename(filename, ".yml"),
+        "id" => filename.gsub(%r{^schemas/}, '').gsub(".yml", ""),
         "name" => file["name"],
         "url" => file["url"],
         "benefits" => file["benefits"],
@@ -71,11 +71,11 @@ begin
     elsif opts["mappings"]
       schema_file = YAML.load_file(File.join(SCHEMA_DIR, file["schema"] + ".yml"))
       mapping = {
-        "id" => File.basename(filename, ".yml"),
+        "id" => filename.gsub(%r{^schemas/}, '').gsub(".yml", ''),
         "standardIds" => [file["schema"]],
         "name" => file["name"],
         "description" => file["description"],
-        "query" => file["mapping"]["query"],
+        "query" => file["mapping"]["query"] || {},
         "url" => file["source"]["url"],
         "author" => file["source"]["name"],
         "entityType" => "",
