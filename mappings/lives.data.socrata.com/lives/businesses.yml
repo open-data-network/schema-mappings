@@ -1,0 +1,11 @@
+name: Richardson LIVES Businesses
+description: LIVES mapping for Richardson businesses
+schema: lives/businesses
+source:
+  name: Richardson, TX
+  url: https://lives.data.socrata.com/dataset/City-of-Richardson-LIVES-Standard-Inspection-Data/yf9v-pthu
+mapping:
+  base: https://lives.data.socrata.com/resource/ntj2-kt9x.csv
+  query:
+    $select: business_id, business_name AS name, business_address AS address, business_city AS city, 'CA' AS state, business_postal_code AS postal_code
+    $group: business_id, business_name, business_address, business_city, business_postal_code

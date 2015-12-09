@@ -1,0 +1,11 @@
+name: Richardson LIVES Inspections
+schema: lives/inspections
+description: Inspection listings for Richardson, in LIVES format.
+source:
+  name: Richardson, TX
+  url: https://lives.data.socrata.com/dataset/City-of-Richardson-LIVES-Standard-Inspection-Data/yf9v-pthu
+mapping:
+  base: https://lives.data.socrata.com/resource/ntj2-kt9x.csv
+  query:
+    $select: business_id, inspection_date AS date, inspection_score AS score
+    $group: business_id, inspection_date, inspection_score
