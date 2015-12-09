@@ -14,9 +14,9 @@ desc 'Run tests'
 task :default => :test
 
 TEMPLATE = <<-ERB
-name: "<%= @schema %> for <%= @customer %>"
+name: "<%= @schema %>"
 schema: <%= @schema_key %>
-description: "<%= @schema %> for <%= @customer %>"
+description: "This is a Socrata-provided mapping of the \\"<%= @schema %>\\" schema for <%= @customer %>"
 source:
   name: "<%= @customer %>"
   url: "https://<%= @domain %>/d/<%= @uid %>"

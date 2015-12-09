@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for South Orange County"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for South Orange County"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for South Orange County"
 source:
   name: "South Orange County"
   url: "https://transparencyapps.demo.socrata.com/d/7pf2-mqhh"

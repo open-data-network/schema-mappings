@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for Sonoma County"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for Sonoma County"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for Sonoma County"
 source:
   name: "Sonoma County"
   url: "https://data.sonomacounty.ca.gov/d/8nsx-2m6i"

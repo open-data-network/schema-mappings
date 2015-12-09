@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Las Vegas"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Las Vegas"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Las Vegas"
 source:
   name: "City of Las Vegas"
   url: "https://opendata.lasvegasnevada.gov/d/4pkv-9yut"

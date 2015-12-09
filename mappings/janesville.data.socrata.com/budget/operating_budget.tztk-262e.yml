@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Janesville"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Janesville"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Janesville"
 source:
   name: "City of Janesville"
   url: "https://janesville.data.socrata.com/d/tztk-262e"

@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for Bureau of Alcohol, Tobacco, Firearms and Explosives"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for Bureau of Alcohol, Tobacco, Firearms and Explosives"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for Bureau of Alcohol, Tobacco, Firearms and Explosives"
 source:
   name: "Bureau of Alcohol, Tobacco, Firearms and Explosives"
   url: "https://transparencyapps.demo.socrata.com/d/sy5z-rcpz"

@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Alpharetta"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Alpharetta"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Alpharetta"
 source:
   name: "City of Alpharetta"
   url: "https://transparencyapps.demo.socrata.com/d/56q4-y9ri"

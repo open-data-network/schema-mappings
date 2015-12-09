@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Lawrence"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Lawrence"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Lawrence"
 source:
   name: "City of Lawrence"
   url: "https://transparencyapps.demo.socrata.com/d/ubww-x997"

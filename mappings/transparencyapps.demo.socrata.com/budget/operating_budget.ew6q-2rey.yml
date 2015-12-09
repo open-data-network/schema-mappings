@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Anaheim"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Anaheim"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Anaheim"
 source:
   name: "City of Anaheim"
   url: "https://transparencyapps.demo.socrata.com//d/ew6q-2rey"

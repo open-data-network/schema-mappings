@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Weatherford"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Weatherford"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Weatherford"
 source:
   name: "City of Weatherford"
   url: "https://weatherfordtx.data.socrata.com/d/wsqs-fwej"

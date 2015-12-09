@@ -1,6 +1,6 @@
-name: "Open Budget: Operating Budget / CIP for City of Bullhead"
+name: "Open Budget: Operating Budget / CIP"
 schema: budget/operating_budget
-description: "Open Budget: Operating Budget / CIP for City of Bullhead"
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Bullhead"
 source:
   name: "City of Bullhead"
   url: "https://transparencyapps.demo.socrata.com/d/6rpc-txh9"
