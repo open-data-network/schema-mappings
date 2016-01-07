@@ -1,0 +1,57 @@
+name: Points of Interest
+url: https://github.com/open-data-network/schema-mappings
+topic: business
+benefits: >
+  Provides a consistent schema for Points of Interest
+columns:
+  - name: Location
+    field_name: location
+    description: The location of this Point of Interest
+    data_type: point
+
+  - name: Name
+    field_name: name
+    description: Common name of the point of interest
+    data_type: text
+
+  - name: Description
+    field_name: description
+    description: A human-readable description
+    data_type: text
+    optional: true
+
+  - name: Classification
+    field_name: classification
+    description: A standardized classifcation for this location
+    data_type: text
+    optional: true
+
+  - name: Address
+    field_name: address
+    description: Street address
+    data_type: text
+    optional: true
+
+  - name: City
+    field_name: city
+    description: City name
+    data_type: text
+    optional: true
+
+  - name: State
+    field_name: state
+    description: State or province. In the U.S. this should be the two-letter code for the state.
+    data_type: text
+    optional: true
+
+  - name: Postal Code
+    field_name: postal_code
+    description: Zip code or other postal code.
+    data_type: text
+    optional: true
+
+  - name: Phone Number
+    field_name: phone_number
+    description: Phone number including country specific dialing information.
+    data_type: text
+    optional: true
