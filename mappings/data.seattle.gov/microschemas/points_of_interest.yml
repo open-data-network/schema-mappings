@@ -1,0 +1,10 @@
+name: "Points of Interest"
+schema: microschemas/points_of_interest
+description: "This is a Socrata-provided mapping from My Neighborhood Map to the Points of Interest microschema"
+source:
+  name: "Seattle, WA"
+  url: "https://data.seattle.gov/Community/My-Neighborhood-Map/82su-5fxf"
+mapping:
+  base: "https://data.seattle.gov/resource/3c4b-gdxv.csv"
+  query:
+    $select: location, common_name AS name, city_feature AS classification, website AS description
