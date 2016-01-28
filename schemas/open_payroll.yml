@@ -1,0 +1,143 @@
+name: "Open Payroll"
+url: "https://drive.google.com/file/d/0B4RWzqGmPbu_aW5kMGRGdlY3SHM/view"
+topic: finance
+benefits: Socrata’s Open Payroll allows you to visualize the details of your employees and payroll in an interactive way.
+columns:
+  - name: Year
+    field_name: year
+    data_type: number
+    description: Used to distinguish entries across multiple years.
+
+  - name: Employee ID
+    field_name: employee_id
+    data_type: text
+    description: This unique identifier is used to associate multiple years of data to the same person, enabling a trend visualization.
+
+  - name: Name Last
+    field_name: name_last
+    data_type: text
+    description: Recommended. Used in searching and show data on a specific individual.
+    optional: true
+
+  - name: Name First
+    field_name: name_first
+    data_type: text
+    description: Recommended. Used in searching and show data on a specific individual.
+    optional: true
+
+  - name: Name Suffix
+    field_name: name_suffix
+    data_type: text
+    description: Recommended. Used in searching and show data on a specific individual.
+    optional: true
+
+  - name: Department
+    field_name: department
+    data_type: text
+    description: Used to aggregate payroll for a given department/division name.
+
+  - name: Position Title
+    field_name: position_title
+    data_type: text
+    description: Used to present a human-readable title for the position.
+
+  - name: Position Type
+    field_name: position_type
+    data_type: text
+    description: Used to aggregate payroll by employment type (ex. Full Time, Part Time, Contract), and to properly represent aggregate statistics (e.g. averages and medians).
+
+  - name: Service Start Date
+    field_name: service_start_date
+    data_type: floating_timestamp
+    description: Recommended. Calculate length of service since initial employment.
+    optional: true
+
+  - name: Service End Date
+    field_name: service_end_date
+    data_type: floating_timestamp
+    description: Recommended. Calculate length of service since initial employment.
+    optional: true
+
+  - name: Pay Total Actual
+    field_name: pay_total_actual
+    data_type: number
+    description: The actual amount that the position has received in total pay in the year.
+
+  - name: Pay Base Actual
+    field_name: pay_base_actual
+    data_type: number
+    description: Recommended. The actual amount that the position has received in base/salary pay in the year.
+    optional: true
+
+  - name: Pay Benefits Actual
+    field_name: pay_benefits_actual
+    data_type: number
+    description: Recommended. The actual amount that the position has received in benefits pay in the year.
+    optional: true
+
+  - name: Pay Overtime Actual
+    field_name: pay_overtime_actual
+    data_type: number
+    description: Recommended. The actual amount that the position has received in overtime pay in the year.
+    optional: true
+
+  - name: Pay Other Actual
+    field_name: pay_other_actual
+    data_type: number
+    description: Recommended. The actual amount of other pay (e.g. supplemental pay, bonuses, etc) in the year.
+    optional: true
+
+  - name: Pay Base
+    field_name: pay_base
+    data_type: number
+    description: The amount that the position is expected to receive in base/salary pay for the year.
+
+  - name: Pay Benefits
+    field_name: pay_benefits
+    data_type: number
+    description: The amount that the position is expected to receive in benefits pay in the year.
+
+  - name: Pay Other
+    field_name: pay_other
+    data_type: number
+    description: The amount of additional pay (e.g. supplemental pay, bonuses, etc) that the position is expected to receive for the year.
+
+  - name: Race
+    field_name: race
+    data_type: text
+    description: Show distribution of employees and compensation by race.
+
+  - name: Ethnicity
+    field_name: ethnicity
+    data_type: text
+    description: Show distribution of employees and compensation by ethnicity.
+
+  - name: Gender
+    field_name: gender
+    data_type: text
+    description: Show distribution of employees and compensation by gender.
+
+  - name: Age
+    field_name: age
+    data_type: number
+    description: Show distribution of employees and compensation by age bands.
+
+  - name: Residing Zip Code
+    field_name: residing_zip_code
+    data_type: text
+    description: Show distribution of employees and compensation by geography.
+
+  - name: Memorandum of Understanding
+    field_name: memorandum_of_understanding
+    data_type: text
+    description: Show employees connected to a specific MOU.
+
+  - name: Contract
+    field_name: contract
+    data_type: text
+    description: Show employees connected to a specific union contract.
+
+  - name: Bargaining Group
+    field_name: bargaining_group
+    data_type: text
+    description: Show employees connected to a specific bargaining group.
