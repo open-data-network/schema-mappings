@@ -1,0 +1,11 @@
+name: "Points of Interest: Restaurants"
+schema: microschemas/points_of_interest
+description: "This is a Socrata-provided mapping for the Points of Interest microschema"
+source:
+  name: "Austin, TX"
+  url: "https://data.austintexas.gov/dataset/Restaurant-Inspection-Scores/ecmv-9xxi"
+mapping:
+  base: "https://data.austintexas.gov/resource/nguv-n54k.csv"
+  query:
+    $select: address AS location, restaurant_name AS name, 'Restaurant' AS classification, address_address AS address, address_city AS city, address_state AS state, address_zip AS postal_code
+    $group: location, name, address, city, state, postal_code
