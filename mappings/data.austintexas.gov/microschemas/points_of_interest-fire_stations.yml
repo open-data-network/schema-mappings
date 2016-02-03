@@ -1,0 +1,10 @@
+name: "Points of Interest: Fire Stations"
+schema: microschemas/points_of_interest
+description: "This is a Socrata-provided mapping for the Points of Interest microschema"
+source:
+  name: "Austin, TX"
+  url: "https://data.austintexas.gov/Public-Safety/Austin-Fire-Stations/64cq-wf5u"
+mapping:
+  base: "https://data.austintexas.gov/resource/kq45-3d78.csv"
+  query:
+    $select: location_1 AS location, name, 'Fire Station' AS classification, location_1_location AS address, location_1_city AS city, location_1_state AS state, location_1_zip AS postal_code
