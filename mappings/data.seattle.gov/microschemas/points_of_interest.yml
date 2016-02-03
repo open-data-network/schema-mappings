@@ -7,4 +7,4 @@ source:
 mapping:
   base: "https://data.seattle.gov/resource/3c4b-gdxv.csv"
   query:
-    $select: location, common_name AS name, city_feature AS classification, website AS description
+    $select: location, common_name AS name, city_feature AS classification, website AS description, address, 'Seattle' AS city, 'WA' AS state
