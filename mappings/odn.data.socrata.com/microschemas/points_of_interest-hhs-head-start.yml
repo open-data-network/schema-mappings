@@ -1,0 +1,19 @@
+name: "Points of Interest"
+schema: microschemas/points_of_interest
+description: "This is a Socrata-provided mapping from the HHS Head Start Locations to the Points of Interest microschema"
+source:
+  name: "Health & Human Services"
+  url: "https://odn.data.socrata.com/dataset/HHS-Head-Start-Locations/rgcy-3cjf"
+mapping:
+  base: "https://odn.data.socrata.com/resource/9frz-9cdg.csv"
+  query:
+    $select: >
+      location,
+      name,
+      'Head Start Center' AS classification,
+      center_type AS description,
+      address,
+      city,
+      state,
+      zip AS postal_code,
+      program_main_phone_number AS phone_number
