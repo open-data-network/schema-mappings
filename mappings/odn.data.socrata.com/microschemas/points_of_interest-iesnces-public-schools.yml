@@ -1,0 +1,19 @@
+name: "Points of Interest"
+schema: microschemas/points_of_interest
+description: "This is a Socrata-provided mapping from the US Education - Public Schools to the Points of Interest microschema"
+source:
+  name: "Institute of Education Sciences at National Center for Education Statistics"
+  url: "https://odn.data.socrata.com/Education/US-Education-Public-Schools/wcbu-9t7q"
+mapping:
+  base: "https://odn.data.socrata.com/api/views/wcbu-9t7q/rows.csv"
+  query:
+    $select: >
+      location,
+      name,
+      classification,
+      name AS description,
+      address,
+      city,
+      state,
+      postal_code,
+      phone_number
