@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP"
+schema: budget/operating_budget
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for Town of North Kingstown"
+source:
+  name: "Town of North Kingstown"
+  url: "https://northkingstown.data.socrata.com/d/dert-e3cw"
+mapping:
+  base: "https://northkingstown.data.socrata.com/resource/jmcf-26hk.csv"

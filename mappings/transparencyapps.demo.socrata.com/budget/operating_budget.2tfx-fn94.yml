@@ -1,0 +1,8 @@
+name: "Open Budget: Operating Budget / CIP"
+schema: budget/operating_budget
+description: "This is a Socrata-provided mapping of the \"Open Budget: Operating Budget / CIP\" schema for City of Tim Town"
+source:
+  name: "City of Tim Town"
+  url: "https://transparencyapps.demo.socrata.com/d/2tfx-fn94"
+mapping:
+  base: "https://transparencyapps.demo.socrata.com/resource/5amv-yxzp.csv"
