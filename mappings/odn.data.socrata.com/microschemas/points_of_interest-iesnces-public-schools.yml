@@ -5,7 +5,7 @@ source:
   name: "Institute of Education Sciences at National Center for Education Statistics"
   url: "https://odn.data.socrata.com/Education/US-Education-Public-Schools/wcbu-9t7q"
 mapping:
-  base: "https://odn.data.socrata.com/api/views/wcbu-9t7q/rows.csv"
+  base: "https://odn.data.socrata.com/resource/knmi-znhc.csv"
   query:
     $select: >
       location,
